@@ -2,6 +2,17 @@
 <html>
 <head>
 	<title>Daily Wood Puzzle Solver</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHTDEV7B0E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-ZHTDEV7B0E');
+  </script>	
+
 	<style>
 	.grid-container {
 		display: grid;
@@ -116,8 +127,10 @@
        "29",  "30",  "31", "SUN", "MON", "TUE", "WED",
          "",    "",    "",    "", "THU", "FRI", "SAT" 
     ];
+//      "red", "blue", "green", "yellow", "orange", "purple", "pink", "brown", "cyan", "gray" 
+
     const pieceColors = [
-      "red", "blue", "green", "yellow", "orange", "purple", "pink", "brown", "cyan", "gray" 
+      "#A47864", "#4C332E", "#F0C27B", "#A0522D", "#C0C8B2", "#FFFDD0", "#8D4135", "#B3B3B3", "#D2B48C", "#B59F8A"
     ];
         
     for (let i = 0; i < 56; i++) {
