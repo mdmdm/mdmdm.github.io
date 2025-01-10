@@ -287,6 +287,12 @@
                 
           currentPieceIndex++;
           solveButton.textContent = SolveMessage[currentPieceIndex];
+          
+          // Track hint usage with Google Analytics
+          gtag('event', 'hint_used', {
+            'event_category': 'Puzzle',
+            'event_label': `Hint ${currentPieceIndex + 1}` 
+          });
   
           // Check if all pieces are revealed
           if (currentPieceIndex > 9) { 
